@@ -1,0 +1,54 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
+			"details": "Voting Platform",
+			"kind": "dev",
+			"methods": {},
+			"title": "Voting",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Voting.sol": "Voting"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Voting.sol": {
+			"keccak256": "0x652f0b4aed428ca11106aac966ecd65ac3addf9f4b72046bb1cd66f545316f20",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://207105150becd18e8edc544a3cda7f1e4eb2e016ef615d6a36f0a81240118f36",
+				"dweb:/ipfs/QmUTJ5aFBvBuhEZ5U7Ef48jsyzJTKGqZKcusFPnPgWLMJz"
+			]
+		}
+	},
+	"version": 1
+}

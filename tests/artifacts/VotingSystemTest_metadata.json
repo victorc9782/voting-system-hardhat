@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/VotingSystem_test.sol": "VotingSystemTest"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/VotingSystem.sol": {
+			"keccak256": "0x788ee3583208bf6549a91e476c22fbdacb0128395031d46b3a87be9942215edb",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://5844216d1092ccfa44b641f2e7029108dddbb954bfb345fb863dd6e407c799a6",
+				"dweb:/ipfs/QmXywiuZPXDatxWPXgkcZAUbp6YKUMM5Vj2GuuqnAXuzxN"
+			]
+		},
+		"remix_accounts.sol": {
+			"keccak256": "0xab088ffd1cd1033f54c2486f151b5d02281a3b76724c8e6f48479c25a4f7809e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://5ddaf9976b1838f7028cbedfaf7f6e1cf8c898e100221176ff1406ee8b599f23",
+				"dweb:/ipfs/QmX2FYLXYyo5Cn55ZX2CfngpscSh4mQhcMVzQdQsh2vqcG"
+			]
+		},
+		"remix_tests.sol": {
+			"keccak256": "0xe2783cdc204cba8c72494119339f1d90f9022b15d6c718c668b7f097d8e29787",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://bb6a22e64c7f16bcaab63b1c1a1b269d5be8a6d37bdd9dec1718477ab916b18e",
+				"dweb:/ipfs/QmdkW1tT5iadBvaHMCoskhDGZKnfdg8o1D9CcoQYtdJet7"
+			]
+		},
+		"tests/VotingSystem_test.sol": {
+			"keccak256": "0x410468dc4fe4c316dcc435705339326b169f2d4459142a77a8a2dba5dbfff161",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d103fedf1c0840f1033341b89f1f7a95a2472ba297b05bf12ce2e814d239e3f8",
+				"dweb:/ipfs/QmaE8M9JKZDq9VDCZW7ZSTED16eHpidwHog8KreTQEbhZG"
+			]
+		}
+	},
+	"version": 1
+}
