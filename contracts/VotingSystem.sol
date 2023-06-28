@@ -3,21 +3,22 @@
 pragma solidity >=0.8.2 <0.9.0;
 
 /**
- * @title Voting
+ * @title Voting System
  * @dev Voting Platform
  * @custom:dev-run-script ./scripts/deploy_with_ethers.ts
  */
 contract VotingSystem {
 
     address private _admin;
-    uint numVotings;
+    uint256 numVotings = 0;
     Voting[] private _votings;
     mapping (address => uint256) private _scores;
 
     struct Voting {
         string topic;
         string description;
-        mapping (address => bool) votingResult;
+        bool[] yesAddresses;
+        bool[] noAddresses;
         bool isOpen;
     }
 
@@ -25,16 +26,48 @@ contract VotingSystem {
         _admin = msg.sender;
     }
 
-    function createTopic(string memory topic, string memory description)
+    function createTopic(string memory _topic, string memory _description)
     external isAdmin
     returns (uint256)
     {
-        Voting storage newVoting = _votings[numVotings++];
-        newVoting.topic = topic;
-        newVoting.description = description;
-        newVoting.isOpen = false;
-        _votings.push();
-        return numVotings;
+        bool [] memory yesAddresses;
+        bool [] memory noAddresses;
+        _votings.push(Voting(_topic, _description, yesAddresses , noAddresses, false));
+        return numVotings++;
+    } 
+
+    /** 
+     * @dev Return value 
+     * @return value of '_admin'
+     */
+    function getAdmin()
+    public view 
+    returns (address)
+    {
+        return _admin;
+    }
+
+    
+    /** 
+     * @dev Return value 
+     * @return value of 'topic' by voting index
+     */
+    function getVotingTopic(uint256 num)
+    public view 
+    returns (string memory)
+    {
+        return _votings[num].topic;
+    }
+    
+    /** 
+     * @dev Return value 
+     * @return value of 'description' by voting index
+     */
+    function getVotingDescription(uint256 num)
+    public view 
+    returns (string memory)
+    {
+        return _votings[num].description;
     }
 
     /**

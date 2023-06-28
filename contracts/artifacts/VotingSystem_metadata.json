@@ -14,12 +14,12 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "topic",
+						"name": "_topic",
 						"type": "string"
 					},
 					{
 						"internalType": "string",
-						"name": "description",
+						"name": "_description",
 						"type": "string"
 					}
 				],
@@ -33,14 +33,84 @@
 				],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAdmin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "getVotingDescription",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "getVotingTopic",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
 			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
 			"details": "Voting Platform",
 			"kind": "dev",
-			"methods": {},
-			"title": "Voting",
+			"methods": {
+				"getAdmin()": {
+					"details": "Return value ",
+					"returns": {
+						"_0": "value of '_admin'"
+					}
+				},
+				"getVotingDescription(uint256)": {
+					"details": "Return value ",
+					"returns": {
+						"_0": "value of 'description' by voting index"
+					}
+				},
+				"getVotingTopic(uint256)": {
+					"details": "Return value ",
+					"returns": {
+						"_0": "value of 'topic' by voting index"
+					}
+				}
+			},
+			"title": "Voting System",
 			"version": 1
 		},
 		"userdoc": {
@@ -66,11 +136,11 @@
 	},
 	"sources": {
 		"contracts/VotingSystem.sol": {
-			"keccak256": "0x788ee3583208bf6549a91e476c22fbdacb0128395031d46b3a87be9942215edb",
+			"keccak256": "0xb627d7b968bc754414d41c8b6f89df76e389bf8ab7185d569d7cf39225ebf84d",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://5844216d1092ccfa44b641f2e7029108dddbb954bfb345fb863dd6e407c799a6",
-				"dweb:/ipfs/QmXywiuZPXDatxWPXgkcZAUbp6YKUMM5Vj2GuuqnAXuzxN"
+				"bzz-raw://59b95e2e0b04fef213b3ba5b9341bc9da8a4d6969ccd77f4bd64af1201d223c3",
+				"dweb:/ipfs/QmS11DXpYtdm9FdX3kcNovU5onajP8A7RTYPN1ZfxW7qCj"
 			]
 		}
 	},
